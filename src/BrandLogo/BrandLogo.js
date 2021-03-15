@@ -6,8 +6,8 @@ import BrandLogoImage from '../Assets/brand-logo.png';
 
 
 const searchStyle = {
-    width:"50px",
-    height:"8vh",
+    width:"55px",
+    height:"7.5vh",
     paddingBottom:"5px"
 }
 

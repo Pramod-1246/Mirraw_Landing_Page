@@ -1,14 +1,14 @@
 .header {
   height: fit-content;
 }
-.topnav {
+.header {
     overflow: hidden;
     padding-left: 15px;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.103);
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.header a {
   float: left;
   color: rgb(103,11,25);
   text-align: center;
@@ -18,24 +18,24 @@
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.header a:hover {
   text-decoration: none;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.header a.active {
   background-color: #4CAF50;
   color: white;
 }
 
 /* Right-aligned section inside the top navigation */
-.topnav-right {
+.header-right {
   float: right;
   padding-right: 40px;
   margin-right: 10px;
 }
 
-.topnav-right a{
+.header-right a{
     font-size: 15px;
     font-weight: bold;
 }

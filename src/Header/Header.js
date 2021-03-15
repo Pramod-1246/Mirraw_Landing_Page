@@ -14,19 +14,18 @@ function Header () {
 
     return(
         <div className="header">
-            <div className="topnav">
+            <div className="header">
                 <a href="#Contact us">Contact Us   |</a> 
                 <a href="#returns">7 Day Returns  |</a> 
                 <a href="#track">Track Order  |</a> 
                 <a href="#return">Return Order  |</a> 
                 <a href="#sell">Sell On Mirraw  |</a> 
                 <a href="#survey">Survey</a>
-                <div className="topnav-right">
+                <div className="header-right">
                     <a href="#profile"><img style={imageStyle} src={ProfilePicture} alt="profile" />LOG IN</a>
                     <a href="#cart"><img style={imageStyle} src={ShoppingBag} alt="cart" />CART(0)</a>
                 </div>
-            </div>
-                        
+            </div>       
         </div>
     );
 }

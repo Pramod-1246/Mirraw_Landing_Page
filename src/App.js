@@ -3,15 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './Header/Header';
 import BrandLogo from './BrandLogo/BrandLogo';
+import Navbar from './Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <BrandLogo />
-      <div className="nav">
-        Nav
-      </div>
+      <Navbar />
       <div className="carousel">
         Carousel
       </div>
