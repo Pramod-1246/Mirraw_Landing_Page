@@ -5,6 +5,7 @@ import Header from './Header/Header';
 import BrandLogo from './BrandLogo/BrandLogo';
 import Navbar from './Navbar/Navbar';
 import CarouselQuickShop from './CarouselQuickShop/CarouselQuickShop';
+import ListCatalogue from './ListCatalogue/ListCatalogue';
 
 function App() {
   return (
@@ -13,9 +14,7 @@ function App() {
       <BrandLogo />
       <Navbar />
       <CarouselQuickShop />
-      <div className="list-items">
-        List Items
-      </div>
+      <ListCatalogue />
       <div className="grid-items">
         Grid Items
       </div>
