@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header/Header';
 import BrandLogo from './BrandLogo/BrandLogo';
 import Navbar from './Navbar/Navbar';
+import CarouselQuickShop from './CarouselQuickShop/CarouselQuickShop';
 
 function App() {
   return (
@@ -11,9 +12,7 @@ function App() {
       <Header />
       <BrandLogo />
       <Navbar />
-      <div className="carousel">
-        Carousel
-      </div>
+      <CarouselQuickShop />
       <div className="list-items">
         List Items
       </div>
