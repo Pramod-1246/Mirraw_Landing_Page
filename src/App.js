@@ -1,16 +1,14 @@
 import './App.css';
-import Header from './Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Header from './Header/Header';
+import BrandLogo from './BrandLogo/BrandLogo';
 
 function App() {
   return (
     <div className="App">
-      <div className="header">
-        <Header />
-      </div>
-      <div className="search-brand">
-        brand search
-      </div>
+      <Header />
+      <BrandLogo />
       <div className="nav">
         Nav
       </div>

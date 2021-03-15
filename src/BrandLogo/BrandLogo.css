@@ -1,0 +1,22 @@
+.brand-searchbar {
+    padding: 0% 2%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.103);
+}
+
+.brand-searchbar img {
+    width: 20vw;
+    height: 10vh;
+}
+
+.brand-searchbar-right {
+    float: right;
+    padding:20px 7vw;
+    margin-right: 10px;
+  }
+
+.brand-searchbar-right input[type=text] {
+    height: 7vh;
+    width: 40vw;
+    padding: 10px;
+    font-style: italic;
+}

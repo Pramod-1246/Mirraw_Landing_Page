@@ -1,7 +1,10 @@
+.header {
+  height: fit-content;
+}
 .topnav {
     overflow: hidden;
     padding-left: 15px;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.329);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.103);
 }
 
 /* Style the links inside the navigation bar */
