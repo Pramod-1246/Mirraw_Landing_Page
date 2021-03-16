@@ -3,22 +3,85 @@ import './Navbar.css';
 
 import { Badge } from 'react-bootstrap';
 
+const navLinks = [
+    {
+        text:"Sarees",
+        link:"#Sarees",
+        badgeRequired:false
+    },
+    {
+        text:"Lehengas",
+        link:"#Lehengas",
+        badgeRequired:false
+    },
+    {
+        text:"Salwar Kamees",
+        link:"#SalwarKamees",
+        badgeRequired:false
+    }, 
+    {
+        text:"Kurtis",
+        link:"#Kurtis",
+        badgeRequired:false
+    }, 
+    {
+        text:"Jwellery",
+        link:"#Jwellery",
+        badgeRequired:false
+    }, 
+    {
+        text:"Kids",
+        link:"#Kids",
+        badgeRequired:false
+    }, 
+    {
+        text:"Mens",
+        link:"#Mens",
+        badgeRequired:false
+    }, 
+    {
+        text:"Islamic Wear",
+        link:"#IslamicWear",
+        badgeRequired:false
+    },
+    {
+        text:"Home & Living",
+        link:"#Home&Living",
+        badgeRequired:false
+    },
+    {
+        text:"Luxe ",
+        link:"#Luxe",
+        badgeRequired:true,
+        badgeText:"New"
+    },
+    {
+        text:"Flash ",
+        link:"#Flash",
+        badgeRequired:true,
+        badgeText:"Sale"
+    },
+    {
+        text:"Collections",
+        link:"#Collections",
+        badgeRequired:false
+    }
+]
+
 function Navbar() {
     return(
         <div className="nav">
             <div className="navbar">
-                <a href="#Sarees">Sarees</a>
-                <a href="#Lehengas">Lehengas</a> 
-                <a href="#Salwar Kamees">Salwar Kamees</a> 
-                <a href="#Kurtis">Kurtis</a> 
-                <a href="#Jwellery">Jwellery</a> 
-                <a href="#Kids">Kids</a> 
-                <a href="#Mens">Mens</a> 
-                <a href="#Islamic Wear">Islamic Wear</a> 
-                <a href="#Home & Livin">Home & Livin</a> 
-                <a href="#LUXE">LUXE{' '}<Badge variant="danger">New</Badge></a> 
-                <a href="#Flash">Flash{' '}<Badge variant="danger">sale</Badge></a> 
-                <a href="#Collections">Collections</a> 
+                { navLinks.map( 
+                    navLink => <a href={navLink.link}>
+                        { navLink.text }
+                        { 
+                            navLink.badgeRequired ? 
+                            <Badge variant="danger">{ navLink.badgeText }</Badge> 
+                            : null 
+                        }
+                        </a>) }
+                
             </div>  
         </div>
     );

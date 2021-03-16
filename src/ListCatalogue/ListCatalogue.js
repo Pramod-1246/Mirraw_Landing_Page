@@ -10,15 +10,28 @@ const imageStyle = {
     width:"95vw"
 }
 
+const imageCatalogueList = [
+    { image:CatalogueList1, altText:"list1", style:imageStyle },
+    { image:CatalogueList2, altText:"list2", style:imageStyle },
+    { image:CatalogueList3, altText:"list3", style:imageStyle },
+    { image:CatalogueList4, altText:"list4", style:imageStyle }
+]
+
 function ListCatalogue() {
     return(
         <div className="list-catalogue">
             <ListGroup>
-                <ListGroup.Item><img style={imageStyle} src={CatalogueList1} alt="list1" /></ListGroup.Item>
-                <ListGroup.Item><img style={imageStyle} src={CatalogueList2} alt="list2" /></ListGroup.Item>
-                <ListGroup.Item><img style={imageStyle} src={CatalogueList3} alt="list3" /></ListGroup.Item>
-                <ListGroup.Item><img style={imageStyle} src={CatalogueList4} alt="list4" /></ListGroup.Item>
-                {/* <ListGroup.Item><img style={imageStyle} src={CatalogueList1} alt="list1" />s</ListGroup.Item> */}
+                {
+                    imageCatalogueList.map(
+                        imageCatalogueItem => <ListGroup.Item>
+                            <img
+                                style={imageCatalogueItem.style}
+                                src={imageCatalogueItem.image}
+                                alt={imageCatalogueItem.altText} 
+                            />
+                        </ListGroup.Item>
+                    )
+                }
             </ListGroup>
         </div>
     );

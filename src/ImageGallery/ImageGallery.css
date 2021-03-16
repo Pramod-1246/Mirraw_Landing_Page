@@ -1,0 +1,11 @@
+.rootGallery{
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.image-tile {
+    padding-bottom: 5px;
+}

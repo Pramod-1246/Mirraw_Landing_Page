@@ -6,6 +6,7 @@ import BrandLogo from './BrandLogo/BrandLogo';
 import Navbar from './Navbar/Navbar';
 import CarouselQuickShop from './CarouselQuickShop/CarouselQuickShop';
 import ListCatalogue from './ListCatalogue/ListCatalogue';
+import ImageGallery from './ImageGallery/ImageGallery';
 
 function App() {
   return (
@@ -15,9 +16,7 @@ function App() {
       <Navbar />
       <CarouselQuickShop />
       <ListCatalogue />
-      <div className="grid-items">
-        Grid Items
-      </div>
+      <ImageGallery />
       <div className="best-seller-carousel">
         Best Seller Carousel
       </div>

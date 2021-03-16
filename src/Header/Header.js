@@ -9,21 +9,51 @@ const  imageStyle = {
     color: "rgb(103,11,25)"
 }
 
+const headerLinks = [
+    { text:"Contact Us", link:"#ContactUs", isFinal:false},
+    { text:"7 Day Returns", link:"#returns", isFinal:false},
+    { text:"Track Order", link:"#track", isFinal:false},
+    { text:"Return Order", link:"#Return", isFinal:false},
+    { text:"Sell On Mirraw", link:"#Sell", isFinal:false},
+    { text:"Survey", link:"#Survey", isFinal:true}
+]
+
+const headerButtonLinks = [
+    { text:"LOG IN", link:"#profile", imageStyle:imageStyle, imageSource:ProfilePicture, altText: "Profile" },
+    { text:"CART(0)", link:"#cart", imageStyle:imageStyle, imageSource:ShoppingBag, altText:"cart"}
+]
 
 function Header () {
 
     return(
         <div className="header">
             <div className="header">
-                <a href="#Contact us">Contact Us   |</a> 
-                <a href="#returns">7 Day Returns  |</a> 
-                <a href="#track">Track Order  |</a> 
-                <a href="#return">Return Order  |</a> 
-                <a href="#sell">Sell On Mirraw  |</a> 
-                <a href="#survey">Survey</a>
+                { 
+                    headerLinks.map(
+                        headerLink => <a href={headerLink.link}>
+                            {
+                                headerLink.isFinal ? 
+                                headerLink.text :
+                                headerLink.text + "   |"
+                            }
+                        </a>
+                    ) 
+                }
                 <div className="header-right">
-                    <a href="#profile"><img style={imageStyle} src={ProfilePicture} alt="profile" />LOG IN</a>
-                    <a href="#cart"><img style={imageStyle} src={ShoppingBag} alt="cart" />CART(0)</a>
+                    {
+                        headerButtonLinks.map(
+                            headerButtonLink => <a href={ headerButtonLink.link }>
+                                <img 
+                                    style={ headerButtonLink.imageStyle } 
+                                    src={ headerButtonLink.imageSource } 
+                                    alt={ headerButtonLink.altText } 
+                                />
+                                {
+                                    headerButtonLink.text
+                                }
+                            </a>
+                        )
+                    }
                 </div>
             </div>       
         </div>
