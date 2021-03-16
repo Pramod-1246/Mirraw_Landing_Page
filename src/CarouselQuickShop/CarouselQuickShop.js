@@ -34,7 +34,7 @@ const carouselImages = [
 function CarouselQuickShop() {
     return(
         <div className="quickshop-carousel">
-            <CarouselImages carouselImages={carouselImages} />
+            <CarouselImages carouselImages={carouselImages}  />
         </div>
     )
 }

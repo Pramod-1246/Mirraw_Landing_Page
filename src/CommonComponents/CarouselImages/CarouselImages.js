@@ -2,14 +2,14 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
 
-function CarouselImages({carouselImages}) {
+function CarouselImages({carouselImages, slide}) {
     return(
-        <Carousel>
+        <Carousel slide={slide} fade={false}>
                 {
                     carouselImages.map(
                         (carouselImage,idx) => <Carousel.Item key={idx} interval={carouselImage.interval}>
                             <img
-                                className={carouselImage.class ? carouselImage.class : "d-block w-100"}
+                                className="d-block w-100"
                                 src={carouselImage.source}
                                 alt={carouselImage.altText} 
                             />
