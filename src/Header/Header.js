@@ -30,7 +30,7 @@ function Header () {
             <div className="header">
                 { 
                     headerLinks.map(
-                        headerLink => <a href={headerLink.link}>
+                        (headerLink,idx) => <a  key={idx} href={headerLink.link}>
                             {
                                 headerLink.isFinal ? 
                                 headerLink.text :
@@ -42,7 +42,7 @@ function Header () {
                 <div className="header-right">
                     {
                         headerButtonLinks.map(
-                            headerButtonLink => <a href={ headerButtonLink.link }>
+                            (headerButtonLink,idx) => <a key={idx} href={ headerButtonLink.link }>
                                 <img 
                                     style={ headerButtonLink.imageStyle } 
                                     src={ headerButtonLink.imageSource } 

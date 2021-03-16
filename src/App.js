@@ -7,6 +7,11 @@ import Navbar from './Navbar/Navbar';
 import CarouselQuickShop from './CarouselQuickShop/CarouselQuickShop';
 import ListCatalogue from './ListCatalogue/ListCatalogue';
 import ImageGallery from './ImageGallery/ImageGallery';
+import BestSellerComponent from './BestSellerComponent/BestSellerComponent';
+import RecomendedForYouSection from './RecomendedForYouSection/RecomendedForYouSection';
+import TextAreaComponent from './TextAreaComponent/TextAreaComponent';
+import SignupSection from './SignupSection/SignupSection';
+import FeedbackSection from './FeedbackSection/FeedbackSection';
 
 function App() {
   return (
@@ -17,21 +22,11 @@ function App() {
       <CarouselQuickShop />
       <ListCatalogue />
       <ImageGallery />
-      <div className="best-seller-carousel">
-        Best Seller Carousel
-      </div>
-      <div className="recomends-carousel">
-        Recomends Carousel
-      </div>
-      <div className="text-area">
-        Text Area
-      </div>
-      <div className="sign-up-email">
-        Sign-up Email
-      </div>
-      <div className="feedback-carousel">
-        feedback carousel
-      </div>
+      <BestSellerComponent />
+      <RecomendedForYouSection />
+      <TextAreaComponent />
+      <SignupSection />
+      <FeedbackSection />
       <div className="footer-section">
         footer section
       </div>

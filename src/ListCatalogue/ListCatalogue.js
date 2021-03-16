@@ -1,10 +1,11 @@
 import React from 'react';
+
+import ListGroupComponent from '../CommonComponents/ListGroupComponent/ListGroupComponent';
+
 import CatalogueList1 from '../Assets/catalogue-list-1.png'
 import CatalogueList2 from '../Assets/catalogue-list-2.png';
 import CatalogueList3 from '../Assets/catalogue-list-3.png';
 import CatalogueList4 from '../Assets/catalogue-list-4.png';
-
-import { ListGroup } from 'react-bootstrap';
 
 const imageStyle = {
     width:"95vw"
@@ -20,19 +21,7 @@ const imageCatalogueList = [
 function ListCatalogue() {
     return(
         <div className="list-catalogue">
-            <ListGroup>
-                {
-                    imageCatalogueList.map(
-                        imageCatalogueItem => <ListGroup.Item>
-                            <img
-                                style={imageCatalogueItem.style}
-                                src={imageCatalogueItem.image}
-                                alt={imageCatalogueItem.altText} 
-                            />
-                        </ListGroup.Item>
-                    )
-                }
-            </ListGroup>
+            <ListGroupComponent imageCatalogueList={imageCatalogueList} />
         </div>
     );
 }

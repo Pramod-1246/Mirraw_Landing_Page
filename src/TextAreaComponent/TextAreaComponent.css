@@ -1,0 +1,13 @@
+.card-component {
+    box-shadow: 5px 5px;
+}
+
+.card-title {
+    font-family: inherit;
+    color: rgb(48,48,48);
+}
+
+.card-para {
+    font-family: inherit;
+    font-size:2px;
+}

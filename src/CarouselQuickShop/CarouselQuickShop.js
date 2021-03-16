@@ -1,7 +1,7 @@
 import React from 'react';
 import './CarouselQuickShop.css';
 
-import { Carousel } from 'react-bootstrap'
+import CarouselImages from '../CommonComponents/CarouselImages/CarouselImages';
 
 const carouselImages = [
     { 
@@ -34,19 +34,7 @@ const carouselImages = [
 function CarouselQuickShop() {
     return(
         <div className="quickshop-carousel">
-            <Carousel>
-                {
-                    carouselImages.map(
-                        carouselImage => <Carousel.Item interval={carouselImage.interval}>
-                            <img
-                                className="d-block w-100"
-                                src={carouselImage.source}
-                                alt={carouselImage.altText} 
-                            />
-                        </Carousel.Item>
-                    )
-                }
-            </Carousel>
+            <CarouselImages carouselImages={carouselImages} />
         </div>
     )
 }

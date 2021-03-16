@@ -72,16 +72,17 @@ function Navbar() {
     return(
         <div className="nav">
             <div className="navbar">
-                { navLinks.map( 
-                    navLink => <a href={navLink.link}>
-                        { navLink.text }
-                        { 
-                            navLink.badgeRequired ? 
-                            <Badge variant="danger">{ navLink.badgeText }</Badge> 
-                            : null 
-                        }
-                        </a>) }
-                
+                { 
+                    navLinks.map( 
+                        (navLink,idx) => <a key={idx} href={navLink.link}>
+                            { navLink.text }
+                            { 
+                                navLink.badgeRequired ? 
+                                <Badge variant="danger">{ navLink.badgeText }</Badge> 
+                                : null 
+                            }
+                            </a>) 
+                }
             </div>  
         </div>
     );

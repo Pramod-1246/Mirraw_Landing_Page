@@ -1,0 +1,31 @@
+.signup-section {
+    margin: 5vh 20vw;
+    text-align: center;
+}
+
+.signup-section > h4 {
+    font-weight: 400;
+}
+
+.signup-section > p {
+    font-size: small;
+    padding: 10px;
+    font-style: italic;
+}
+
+.signup-section > input[type=text]{
+    margin-top: 5px;
+    font-style: italic;
+    padding-left: 20px;
+    height: 9vh;
+    width: 30vw;
+}
+
+.signup-section > button {
+    margin-top: 5px;
+    background-color: rgb(103,11,25);
+    border: 0px;
+    color: white;
+    height: 9vh;
+    width: 13vw;
+}

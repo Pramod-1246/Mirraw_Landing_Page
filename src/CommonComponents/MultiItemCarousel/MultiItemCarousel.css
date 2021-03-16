@@ -1,0 +1,27 @@
+.carousel-image {
+    position:unset;
+    transition-property: width, height;
+    width: 170px;
+    height: 35vh;
+    margin: 0px 5px;
+    padding: 10px 10px;
+}
+
+.carousel-image:hover{
+    padding: 0;
+    width: 170px;
+    height: 35.05vh;
+}
+
+
+.carousel-group {
+    position: relative;
+    height:fit-content;
+    width: auto;
+    text-align: center;
+    padding: 5px 50px;
+    margin: 10px;
+}
+.carousel-group:hover {
+    margin: 10px;
+}
