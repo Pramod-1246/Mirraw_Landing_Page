@@ -2,9 +2,9 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
 
-function CarouselImages({carouselImages, slide}) {
+function CarouselImages({carouselImages}) {
     return(
-        <Carousel slide={slide} fade={false}>
+        <Carousel>
                 {
                     carouselImages.map(
                         (carouselImage,idx) => <Carousel.Item key={idx} interval={carouselImage.interval}>
