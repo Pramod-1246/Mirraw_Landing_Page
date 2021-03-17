@@ -17,16 +17,17 @@
     margin-top: 5px;
     font-style: italic;
     padding-left: 20px;
-    height: 9vh;
-    width: 30vw;
+    height: 7vh;
+    width: 25vw;
 }
 
 .signup-section > button {
     font-size: small;
     margin-top: 4px;
     background-color: rgb(103,11,25);
+    padding-top: 5px;
     border: 0px;
     color: white;
-    height: 9vh;
-    width: 13vw;
+    height: 7vh;
+    width: 11vw;
 }

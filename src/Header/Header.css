@@ -36,3 +36,28 @@
     font-size: 15px;
     font-weight: bold;
 }
+
+
+
+.hover-card-login {
+  text-align: center;
+  border-bottom: solid 2px rgb(103,11,25);
+  margin: 0;
+  padding: 0;
+}
+
+.hover-card-register {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hover-card-button {
+  color:white;
+  display: block;
+  margin:10px 20px;
+  padding: 5px 10px;
+  background-color: rgb(103,11,25);
+  border: 0;
+}
+

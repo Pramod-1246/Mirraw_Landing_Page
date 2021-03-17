@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import ProfilePicture from '../Assets/profile.png';
 import ShoppingBag from '../Assets/shopping-bag.png';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 
 
 const  imageStyle = {
@@ -24,6 +26,15 @@ const headerButtonLinks = [
 ]
 
 function Header () {
+    const [anchorEl, setAnchorEl] = useState(null);
+
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
 
     return(
         <div className="header-container">
@@ -42,7 +53,7 @@ function Header () {
                 <div className="header-right">
                     {
                         headerButtonLinks.map(
-                            (headerButtonLink,idx) => <a key={idx} href={ headerButtonLink.link }>
+                            (headerButtonLink,idx) => <a key={idx} onClick={idx===0 ? handleClick : null} href={ headerButtonLink.link }>
                                 <img 
                                     style={ headerButtonLink.imageStyle } 
                                     src={ headerButtonLink.imageSource } 
@@ -53,7 +64,27 @@ function Header () {
                                 }
                             </a>
                         )
-                    }
+                        }
+                        <Menu
+                            id="simple-menu"
+                            anchorEl={anchorEl}
+                            keepMounted
+                            open={Boolean(anchorEl)}
+                            onClose={handleClose}
+                        >
+                                            <MenuItem onClick={handleClose}>
+                                                <div className="hover-card-login">
+                                                    Existing user?
+                                                    <button className="hover-card-button">Login</button>
+                                                </div>
+                                            </MenuItem>
+                                            <MenuItem onClick={handleClose}>
+                                                <div className="hover-card-register">
+                                                    New to Mirraw
+                                                    <button className="hover-card-button">Register</button>
+                                                </div>
+                                            </MenuItem>
+                        </Menu>
                 </div>
             </div>       
         </div>

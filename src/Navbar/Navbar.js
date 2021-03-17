@@ -67,14 +67,15 @@ const navLinks = [
         badgeRequired:false
     }
 ]
-
+  
 function Navbar() {
+    
     return(
         <div className="nav">
             <div className="navbar">
                 { 
                     navLinks.map( 
-                        (navLink,idx) => <a key={idx} href={navLink.link}>
+                        (navLink,idx) => <a className="anchors" key={idx} href={navLink.link}>
                             { navLink.text }
                             { 
                                 navLink.badgeRequired ? 
@@ -83,8 +84,10 @@ function Navbar() {
                             }
                             </a>) 
                 }
+                 
             </div>  
         </div>
+    
     );
 }
 
