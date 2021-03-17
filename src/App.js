@@ -29,7 +29,6 @@ function App() {
       <SignupSection />
       <FeedbackSection />
       <FooterSection />
-
     </div>
   );
 }
