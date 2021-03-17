@@ -26,7 +26,7 @@ const headerButtonLinks = [
 function Header () {
 
     return(
-        <div className="header">
+        <div className="header-container">
             <div className="header">
                 { 
                     headerLinks.map(

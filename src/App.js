@@ -12,6 +12,7 @@ import RecomendedForYouSection from './RecomendedForYouSection/RecomendedForYouS
 import TextAreaComponent from './TextAreaComponent/TextAreaComponent';
 import SignupSection from './SignupSection/SignupSection';
 import FeedbackSection from './FeedbackSection/FeedbackSection';
+import FooterSection from './FooterSection/FooterSection';
 
 function App() {
   return (
@@ -27,9 +28,7 @@ function App() {
       <TextAreaComponent />
       <SignupSection />
       <FeedbackSection />
-      <div className="footer-section">
-        footer section
-      </div>
+      <FooterSection />
 
     </div>
   );

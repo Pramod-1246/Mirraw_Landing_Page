@@ -1,13 +1,13 @@
-.header {
+.header-container {
   height: fit-content;
 }
+
 .header {
     overflow: hidden;
     padding-left: 15px;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.103);
 }
 
-/* Style the links inside the navigation bar */
 .header a {
   float: left;
   color: rgb(103,11,25);
@@ -17,18 +17,15 @@
   font-size: 13px;
 }
 
-/* Change the color of links on hover */
 .header a:hover {
   text-decoration: none;
 }
 
-/* Add a color to the active/current link */
 .header a.active {
   background-color: #4CAF50;
   color: white;
 }
 
-/* Right-aligned section inside the top navigation */
 .header-right {
   float: right;
   padding-right: 40px;

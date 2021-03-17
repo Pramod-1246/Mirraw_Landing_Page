@@ -1,0 +1,33 @@
+.footer-section {
+    margin-top: 10vh;
+    background-color: rgb(103,11,25);
+    height: fit-content;
+}
+
+.cols {
+    padding-top: 10vh;
+    margin-bottom: 5vh;
+    padding-left: 5vw;
+    color: white;
+    display: inline-flex;
+}
+
+.cols > ul > li {
+    font-size: small;
+    list-style: none;
+}
+
+.cols > ul > h5 {
+    padding-top: 2vh;
+}
+
+@media (max-width:600px) {
+    .footer-section{
+        margin-top: 15vh;
+    }
+    .cols {
+        padding-top: 5vh;
+        padding-left: 10vw;
+        display: flex;
+    }
+}

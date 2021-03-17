@@ -22,7 +22,8 @@
 }
 
 .signup-section > button {
-    margin-top: 5px;
+    font-size: small;
+    margin-top: 4px;
     background-color: rgb(103,11,25);
     border: 0px;
     color: white;
