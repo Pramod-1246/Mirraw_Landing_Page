@@ -625,6 +625,14 @@ const displayCardDetails = {
         ]
     }
 
+    const checkTab = (str) => {
+        let tabs = ["Sarees","Lehengas","Salwar Kamees","Kurtis","Jewellery","Kids","Mens","Home & Living","Luxe ","Collections"]
+        if(tabs.includes(str)){
+            return true;
+        }
+        return false;
+    }
+
   
 function Navbar() {
     const [showDisplay, setShowDisplay] = useState(false);
@@ -652,8 +660,9 @@ function Navbar() {
                         onMouseEnter={e => {
                             setShowDisplay(true);
                             let selectedTab = e._targetInst.memoizedProps.children[0];
-                            setDisplayTab(displayCardDetails[selectedTab]);
-                            console.log(selectedTab);
+                            if(checkTab(selectedTab)){
+                                setDisplayTab(displayCardDetails[selectedTab]);
+                            }
                             }} 
                         onMouseLeave={() => {
                             setShowDisplay(false);
