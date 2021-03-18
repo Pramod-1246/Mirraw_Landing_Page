@@ -31,3 +31,25 @@
     height: 7vh;
     width: 11vw;
 }
+
+@media (max-width:600px){
+    .signup-section > input[type=text]{
+        margin-top: 5px;
+        font-size: smaller;
+        font-style: italic;
+        padding-left: 20px;
+        height: 5vh;
+        width: 35vw;
+    }
+    
+    .signup-section > button {
+        font-size: smaller;
+        margin-top: 4px;
+        background-color: rgb(103,11,25);
+        padding-top: 4px;
+        border: 0px;
+        color: white;
+        height: 5vh;
+        width: 15vw;
+    }
+}

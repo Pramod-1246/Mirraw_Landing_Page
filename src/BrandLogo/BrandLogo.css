@@ -16,8 +16,17 @@
   }
 
 .brand-searchbar-right input[type=text] {
-    height: 7vh;
-    width: 40vw;
+    font-size: small;
+    height: 6.75vh;
+    width: 38vw;
     padding: 10px;
     font-style: italic;
 }
+
+.brand-searchbar-right > img {
+    width: 55px;
+    height: 6.75vh;
+    margin-bottom: 2px;
+}
+
+

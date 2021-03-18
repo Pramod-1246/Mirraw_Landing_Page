@@ -1,0 +1,23 @@
+.displayCard {
+    background-color: white;
+}
+
+.display-cols {
+    padding-top: 1vh;
+    margin-bottom: 5vh;
+    padding-left: 2vw;
+    display: inline-flex;
+}
+
+.display-cols > ul > li {
+    color:black;
+    font-size: small;
+    list-style: none;
+    padding: 3px 0px;
+}
+
+.display-cols > ul > h5 {
+    color: rgb(103,11,25);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}

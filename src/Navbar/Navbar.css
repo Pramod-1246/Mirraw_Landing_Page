@@ -1,3 +1,7 @@
+.hover-section-remove {
+    display: none;
+}
+
 
 .nav {
     display: block;
@@ -6,7 +10,7 @@
 }
 .navbar {
     width: 100%;
-    padding: 4px 0px;
+    padding: 2px 0px;
     display: block;
     text-align: center;
     overflow: auto;
@@ -19,13 +23,36 @@
     color: black;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .navbar > a:hover {
     text-decoration: none;
     border-bottom: 3px solid rgb(103,11,25);
 }
+.hover-section-show {
+    text-align: left;
+    display: block;
+    position: absolute;
+    margin-top: -1px;
+    margin-left: 9.5vw;
+    width: 80vw;
+    height: fit-content;
+    z-index: 1;
+}
+
+@media (max-width:1040px){
+    .hover-section-show {
+        text-align: left;
+        display: block;
+        position: aboslute;
+        margin: 0;
+        width: 100vw;
+        height: fit-content;
+        z-index: 1;
+    }
+}
+
 
 
 

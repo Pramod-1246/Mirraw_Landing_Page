@@ -3,11 +3,11 @@
 }
 
 .card-title {
-    font-family: inherit;
-    color: rgb(48,48,48);
+    color: rgb(103,11,25);
 }
 
 .card-para {
     font-family: inherit;
     font-size:2px;
+    color: rgb(48,48,48);
 }

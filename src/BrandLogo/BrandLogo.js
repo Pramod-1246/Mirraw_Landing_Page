@@ -5,12 +5,6 @@ import SearchButton from '../Assets/search.png';
 import BrandLogoImage from '../Assets/brand-logo.png';
 
 
-const searchStyle = {
-    width:"55px",
-    height:"7.5vh",
-    paddingBottom:"5px"
-}
-
 const brandLogoDimensions = {
     width:"15vw",
     height:"12vh"
@@ -21,8 +15,8 @@ function BrandLogo() {
         <div className="brand-searchbar">
             <img src={BrandLogoImage} style={brandLogoDimensions} alt="brand name" />
             <div className="brand-searchbar-right">
-                <input type="text" placeholder={"Search for Something......"} />
-                <img src={SearchButton} style={searchStyle} alt="search"/>
+                <input type="text" placeholder={"Search Something..."} />
+                <img src={SearchButton} alt="search"/>
             </div>
         </div>
     );
