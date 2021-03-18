@@ -27,8 +27,8 @@ const navLinks = [
         badgeRequired:false
     }, 
     {
-        text:"Jwellery",
-        link:"#Jwellery",
+        text:"Jewellery",
+        link:"#Jewellery",
         badgeRequired:false
     }, 
     {
